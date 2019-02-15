@@ -8,133 +8,40 @@
     <link rel="stylesheet" href="resources/css/index.css" type="text/css" />
     <title>Cody R Davis</title>
   </head>
-  <body>
-      <div class="page">
-          <div class="content">
-                <div class="row">
-                    <div class="col-12 section-header flex fd-row contant-center vh-98">
-                        <img class="logo" src="./resources/images/social/logo1040.png">
-                        <h1>Cody R Davis</h1>
-                        <h4>Davis.CodyRyan@gmail.com</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card-container">
-                            <div class="card-top">
-                                <h2>About Me</h2>
-                            </div>
-                            <div class="card-bottom">
-                                <h3>FullStack Web Developer, born and raised in Austin Texas</h3>
-                                <p>I take the design and functionality of the web very seriously, not only as a developer but as a daily user of it as well. 
-                                The internet is one of the most powerful tools on the face of the earth, allowing millions of people access to information, 
-                                applications, and tools to make them more productive. Nothing hinders people more in their quest than that of poorly designed 
-                                sites which do not function as expected.</p>
-
-                                <h3>Functionality</h3>
-                                <p>Every day I learn a little bit more about Javascript. See new ways people are using it. Thinking about ways I would like to 
-                                see web pages work. I take working prototypes to my friends and let them play around with my apps, watching to see how they 
-                                use my apps, and when my app fails to give them the result they desired. Its these lessons that constantly rethinking my 
-                                interfaces, and polishing them for the best experience for the user, going beyond what made sense to me as the developer.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card-container">
-                            <div class="card-top">
-                                <h2>Current Projects</h2>
-                            </div>
-                            <div class="card-bottom">
-                                <div class="project">
-                                    <h3>DiceBag - React Edition</h3>
-                                    <p>Rebuilding DiceBag utilizing React to become more familiar with the technology. Currently this project is in the
-                                    design phase. I'm reimagining how I want to handle each 'dice' and allow users to create macros that roll several dice 
-                                    at a time instead of only a single dice.</p>
-                                    <a 
-                                        href="https://github.com/CodyRDavis/DiceBag-React" 
-                                        target="_blank">
-                                        <button>Vist the GitHub Repo</button>
-                                    </a>
-                                </div>
-                                <hr>
-                                <div class="project">
-                                    <h3>Wine Social (working Title)</h3>
-                                    <p>App designed for those who love Wine to keep track of what they have tried before, what they thought of it, and
-                                    share their experiance with others. currently this project is in the design phase where I'm working with Sam Teich
-                                    to outline features needed for the first generation Wine Social Application.</p>
-                                    <a 
-                                        href="https://github.com/CodyRDavis/Wino" 
-                                        target="_blank">
-                                        <button>Visit the GitHub Repo</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card-container">
-                            <div class="card-top">
-                                <h2 class="section-title">Previous Projects</h2>
-                            </div>
-                            <div class="card-bottom">
-                                <div class="project">
-                                    <h3>I.Do - event planning app</h3>
-                                    <p>Designed to help gathering contact information easier for event planners. My Responsibilites were largly concentrated on
-                                        the back end and API data service channels and routing.
-                                    </p>
-                                    <h4>Utilized</h4>
-                                    <ul>
-                                        <li>Node.js</li>
-                                        <li>Express</li>
-                                        <li>Mongo</li>
-                                    </ul>
-                                    <a 
-                                        href="https://github.com/CodyRDavis/I.Do" 
-                                        target="_blank">
-                                        <button>Visit the GitHub Repo</button>
-                                    </a>
-                                </div>
-                                <hr>
-                                <div class="project">
-                                    <h3>DiceBag - Local Storage Edition</h3>
-                                    <p>Dice Bag is back, this time utilizing local storage so that dice can be saved between
-                                        game sessions. This was a solo project.
-                                    </p>
-                                    <h4>Utilized</h4>
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>Local Storage</li>
-                                    </ul>
-                                    <a 
-                                        href="https://github.com/CodyRDavis/DiceBag" 
-                                        target="_blank">
-                                        <button>Visit the GitHub Repo</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card-container">
-                            <div class="card-top">Title</div>
-                            <div class="card-bottom">Body Texxt</div>  
-                        </div>
-                        
-                    </div>
-                </div>
-                -->
-          </div>
+  <body onload="initilizeSideNavState()">
+      <div id="sideNavContainer" class="side-nav-container">
+          <button id="btnHamburger" class="btn-hamburger">X</button>
+          <div class="profile-box d-flex"></div>
+          <div class="side-nav-menu"></div>
       </div>
-  
+      <div id="content" class="content content-open">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non placeat autem eligendi officia sed libero, dignissimos, voluptates laborum, animi ea nam quasi perferendis obcaecati eveniet earum ullam dolor! Consequuntur, itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit similique et tempore eius impedit obcaecati aut temporibus vel quibusdam distinctio ipsum officia voluptates laboriosam amet, aliquid ipsa tenetur natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro suscipit aliquam molestiae amet repudiandae delectus doloremque quaerat ratione? Voluptates fuga explicabo perferendis nihil autem cumque soluta ipsa tenetur vero.</p>
+      </div>
   </body>
+  <script>
+    document.getElementById("btnHamburger")
+        .addEventListener("click", handleSideMenuStatus);
+
+    function initilizeSideNavState(){
+        console.log("initlizing side nav state");
+        console.log(document.body.clientWidth);
+        if (document.body.clientWidth <= 600){
+            handleSideMenuStatus();
+            
+        }
+        window.setTimeout(function(){
+            document.getElementById('sideNavContainer')
+                .classList.add("transition-5");
+            document.getElementById('content')
+                .classList.add("transition-5");
+        }, .1 );
+    }
+    function handleSideMenuStatus(){
+        console.log("Button Clicked");
+        const sideNav = document.getElementById("sideNavContainer");
+        const content = document.getElementById("content");
+        sideNav.classList.toggle('side-nav-closed');
+        content.classList.toggle('content-open');
+    }
+  </script>
 </html>
