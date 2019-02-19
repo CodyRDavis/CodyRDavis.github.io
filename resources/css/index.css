@@ -4,7 +4,8 @@ html, body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .side-nav-container{
-    background-color: purple;
+    color: white;
+    background-color: #2c1611;
     height: 100vh;
     width: 280px;
     position: fixed;
@@ -16,18 +17,45 @@ html, body{
 .side-nav-container .btn-hamburger{
     position: absolute;
     top: 0;
-    right: -20px;
+    right: -30px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    text-shadow: 0px 0px 1px black;
 }
 .side-nav-closed{
     left: -280px;
 }
-
 .content{
     width: auto;
     height: 100%;
 }
 .content-open{
     margin-left: 280px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:  100%;
+    background-color: #2c1611;
+    background-image: url('../images/bg/nathan-dumlao-654572-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header h1{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 0px 0px 2px black;
+}
+.header h2{
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0px 0px 2px black;
 }
 .transition-5{
     transition-duration: .5s;
