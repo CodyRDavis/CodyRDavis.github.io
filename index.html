@@ -8,44 +8,27 @@
     <link rel="stylesheet" href="resources/css/index.css" type="text/css" />
     <title>Cody R Davis</title>
   </head>
-  <body onload="initilizeSideNavState()">
-      <div id="sideNavContainer" class="side-nav-container">
-          <button id="btnHamburger" class="btn-hamburger">X</button>
-          <div class="profile-box d-flex"></div>
-          <div class="side-nav-menu"></div>
-      </div>
-      <div id="content" class="content content-open">
-          <div class="header">
-              <h1>Cody R Davis</h1>
-              <h2>Web Developer</h2>
+  <body>
+    <nav id="navBar" class="nav-bar">
+          <div class="site-navigation"><a>
+              <img src="./resources/images/social/human-icon-64px.png"
+                class="social-icon"
+              ></a></div>
+          <div class="social-media-container">
+              <ul>
+                  <li><a><img src="./resources/images/social/GitHub-Mark-64px.png" class="social-icon"></a></li>
+                  <li><a><img src="./resources/images/social/In-Black-66px-R.png" class="social-icon"></a></li>
+                  <li><a><img src="./resources/images/social/Twitter_Social_Icon_Circle_White.png" class="social-icon"></a></li>
+              </ul>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non placeat autem eligendi officia sed libero, dignissimos, voluptates laborum, animi ea nam quasi perferendis obcaecati eveniet earum ullam dolor! Consequuntur, itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit similique et tempore eius impedit obcaecati aut temporibus vel quibusdam distinctio ipsum officia voluptates laboriosam amet, aliquid ipsa tenetur natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro suscipit aliquam molestiae amet repudiandae delectus doloremque quaerat ratione? Voluptates fuga explicabo perferendis nihil autem cumque soluta ipsa tenetur vero.</p>
-      </div>
+    </nav>
+    <div class="content">
+        <div class="jumbo-card zenplant-background">
+            <h1>Cody R Davis</h1>
+            <h2>Fullstack Web Developer</h2>
+        </div>
+        <div class="jumbo-card"></div>
+    </div>
   </body>
-  <script>
-    document.getElementById("btnHamburger")
-        .addEventListener("click", handleSideMenuStatus);
-
-    function initilizeSideNavState(){
-        console.log("initlizing side nav state");
-        console.log(document.body.clientWidth);
-        if (document.body.clientWidth <= 600){
-            handleSideMenuStatus();
-            
-        }
-        window.setTimeout(function(){
-            document.getElementById('sideNavContainer')
-                .classList.add("transition-5");
-            document.getElementById('content')
-                .classList.add("transition-5");
-        }, .1 );
-    }
-    function handleSideMenuStatus(){
-        console.log("Button Clicked");
-        const sideNav = document.getElementById("sideNavContainer");
-        const content = document.getElementById("content");
-        sideNav.classList.toggle('side-nav-closed');
-        content.classList.toggle('content-open');
-    }
-  </script>
+ 
 </html>
