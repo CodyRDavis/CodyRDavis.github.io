@@ -60,6 +60,39 @@ a:hover{
 .content > .jumbo-card h2 {
     font-size: 1.5rem;
 }
+.content > .section-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 9rem;
+    background-color: slategrey;
+    color: white;
+}
+.content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.content  > .deck {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    background-color: slategrey;
+    color: white;
+    margin: 16px;
+    width: 332;
+}
+.card > .info-container {
+    padding: 16px;
+}
+.card > img {
+    height: 300px;
+    width: 300px;
+}
+.card strong {
+    font-weight: bold;
+}
 .zenplant-background {
     background-image: url("../images/bg/zenPotPlant.jpg");
     background-repeat: no-repeat;
