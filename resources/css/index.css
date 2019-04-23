@@ -1,11 +1,17 @@
 :root {
+    --base-bg-color: #dadada;
     --main-bg-color: #ffffff; 
     --main-border-color: #bbbbbb;
-    --main-shadow-color: #72727255;
+    --main-shadow-color: #5a5a5aa5;
+    --accent: #f28500;
+    --accent-alt: #a35a00;
+    --dark-text: #000;
+
   }
 html, body{
     height: 100%;
     width: 100%;
+    background-color: var(--base-bg-color);
 }
 main{
     max-width: 720px;
@@ -21,34 +27,59 @@ section{
     box-shadow: 0px 4px 2px 0px var(--main-shadow-color);
     background-color: var(--main-bg-color);
 }
-section::after{
+section > .card-main::after{
     clear: both;
     display: table;
     content: "";
 }
-section > img {
-    float: left;
+section > .card-main > img {
+    float: right;
     height: 150px;
     width: 150px;
     border-radius: 8px;
-    margin: 0px 8px 8px 0px;
+    margin: 0px 0px 8px 8px;
 }
-section > h1 {
+section > .card-main > h1 {
     font-size: 3rem;
     margin-bottom: 8px;
 }
-section > p{
+section > .card-main > p{
     margin-bottom: 8px;
 }
-section > button {
+section > .card-main > button {
     background: transparent;
     border-radius: 8px;
     border: 1px solid var(--main-border-color);
+    padding: 6px 8px;
 }
-section > button:hover{
-    background: #ffa500;
+section > .card-main > button:hover{
+    background: var(--accent);
     cursor: pointer;
 }
-section > button:focus{
-    background: #c96e00;
+section > .card-main > button:focus{
+    background: var(--accent-alt);
+}
+
+.bg-code {
+    background: url(../images/bg/safar-safarov-1509070-unsplash.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.section-intro{
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-intro > h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+.section-intro > h2 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 0px 3px black;
 }
