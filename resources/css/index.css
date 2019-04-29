@@ -118,6 +118,7 @@ section > .card-main button:focus{
 @media (max-width: 400px){
     section > .card-main > img {
         display: inline;
+        float: none;
         width: 100%;
         height: auto;
     }
